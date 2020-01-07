@@ -18,7 +18,22 @@ a{ text-decoration: none }
 
 a:hover{ text-decoration: underline }
 
+.link{
+	background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding: .4em;
+	font-weight: bold;
+	color: white;
+	border-radius: .5em;
+	display: inline-block;
+	margin-top: 5px;
 
+}
+
+.link:hover {
+  text-decoration : none;
+	background: linear-gradient(to right, #1B343E, #182B32, #04090B)
+
+}
 
 .fondo-web
 {
@@ -40,7 +55,7 @@ body{
 
 .app{ 
 	overflow-y: auto;
-	background:rgb(235,235,235);
+	background:#F9F7F7;
 }
 
 header{ 
@@ -73,6 +88,8 @@ header{
 	justify-content: center;
 }
 
+
+
 .welcome-section__presentation { 
 	margin-bottom : 1em;
 	display: flex; 
@@ -83,7 +100,7 @@ header{
 
 .welcome-section__subtitle{ 
 	align-self: center;
-
+	font-weight: bolder;
 	margin-top: 1.31em;
 	width: 70% 
 }
@@ -93,19 +110,21 @@ header{
 .button {
     display : flex;
     justify-content: center;
-
     width:  80%;
     font-weight: bold;
-    background: rgba(200,200,200, .8);
-  	border: white solid 3px;
     padding: 1em;
-    border-radius : 1.5em;
-    color: black;
+    border-radius : .5em;
+    background: #0F2027;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		color: white;
+
 }
 
 .button:hover {
-    text-decoration : none;
-    background :rgba(100,100,100, .7);
+  text-decoration : none;
+	background: linear-gradient(to right, #1B343E, #182B32, #04090B)
+
 }
 
 .welcome-section__img{ 	background-image: url(../img/Koala.jpg) }
@@ -181,7 +200,11 @@ header{
 	line-height: 1.9;
 }
 
-.projects-img{ 	border-radius: 5px }
+.projects-img{ 	
+	border-radius: 5px;
+	width: 300px;
+	height: 350px;
+}
 
 .projects-img:hover{
 	transform: scale3d(1.2, 1.2, 1.2);
@@ -196,11 +219,20 @@ header{
 .projects-link{
 	display: flex;
 	justify-content: center;
+	color: white;	
+	background: #0F2027;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	font-weight: bold;
-	color: #b6b6b6;	
+	padding: .5em;
+	border-radius: .5em;
+
 }
 
-.projects-link:hover{ text-decoration: none }
+.projects-link:hover{ 
+	text-decoration: none;
+	background: linear-gradient(to right, #1B343E, #182B32, #04090B)
+ }
 
 #profile-content{
 	display: flex;
@@ -428,9 +460,9 @@ header{
 	}
 
 	.about-img{
-		width: 40%;
-		height: 60%;
-		margin: 0;
+		width: 300px;
+		height: 250px;
+		margin: 20px;
 	}
 
 	.welcome-section{
